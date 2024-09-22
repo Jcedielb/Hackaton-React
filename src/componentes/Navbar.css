@@ -1,0 +1,60 @@
+/* Estilos para la barra de navegación normal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+  }
+  
+  /* Estilos para los enlaces de la barra de navegación */
+  .navbar a {
+    color: lightgray;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Estilo especial para el logo de la barra de navegación */
+  .navbar .brand {
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Estilos para el input de búsqueda */
+  .navbar input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  .navbar button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Hover para el botón de búsqueda */
+  .navbar button:hover {
+    border-color: #00aced;
+  }
+  
+  /* Reflejar la barra de navegación completamente */
+  .rotated-navbar {
+    transform: scaleY(-1); /* Refleja la barra de navegación */
+    transform-origin: center;
+    display: flex;
+    flex-direction: row-reverse; /* Invierte la dirección de los elementos dentro de la barra */
+    justify-content: space-between;
+  }
+  
+  /* Invertir el reflejo en los textos y botones dentro de la barra invertida */
+  .rotated-navbar * {
+    transform: scaleY(-1); /* Invierte de nuevo los textos y botones para que aparezcan correctamente */
+  }
+  
